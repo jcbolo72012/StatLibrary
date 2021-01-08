@@ -69,3 +69,10 @@ def quickselect(data, index, pivot_fn):
         return quickselect(greater, index - (len(less) + len(equal)), pivot_fn)
 
 print(median([5,6,3,2,4,7,1]))
+
+def z_score(data, value):
+    return (value - mean(data))/standard_deviation(data)
+
+def probability(data, value):
+    # get z-score and look it up (grr)
+    return 0
